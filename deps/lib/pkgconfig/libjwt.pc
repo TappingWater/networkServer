@@ -1,0 +1,12 @@
+prefix=/home/ugrads/majors/chanaka1/cs3214/p4/pserv/deps
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libjwt
+Description: JWT C Library
+Version: 1.12.0
+
+Cflags: -I${includedir}
+Libs: -L${libdir} -ljwt
+Libs.private: -L/home/ugrads/majors/chanaka1/cs3214/p4/pserv/deps/lib -ljansson   -lssl -lcrypto  
